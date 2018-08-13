@@ -12,10 +12,12 @@
     <header>
       <h1>the code review</h1>
     </header>
-    <h2>Signup for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+    <div class="descriptor col">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
 
-    <form action="index.html" method="post">
+    <form action="index.html" method="post" class="col">
 
       <fieldset class="contact">
         <legend>Contact Information</legend>
@@ -47,7 +49,7 @@
       <fieldset class="newsletter">
         <legend>Newsletter</legend>
 
-        <label>Select the newsletters you would like to recieve</label>
+        <label>Select the newsletters you would like to receive</label>
         <br>
         <input type="checkbox" id="html_news" name="news_type" value="newsletter_html">
         <label for="html_news">HTML News</label>
@@ -72,7 +74,7 @@
 
         <label for="ideas">Other topics you'd like to hear about</label>
         <br>
-        <textarea id="ideas"></textarea>
+        <textarea id="ideas" placeholder="Example: PHP, Python, Java...  "></textarea>
       </fieldset>
 
       <button type="submit">Sign Up</button>
@@ -81,7 +83,7 @@
 
 
   </body>
-  <footer>
+  <footer class="col">
     <p>Copyright The Code Review</p>
   </footer>
 </html>
