@@ -6,7 +6,7 @@
     <title>Online Registration Form</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- TODO:  -->  <link href="GOOGLE FONTS URL" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
@@ -37,10 +37,60 @@
         <label for="city">City</label>
         <input type="text" id="city" name="user_city">
 
-        <!-- TODO: Drop down box, That lists all 50 states  -->
         <label for="state">State</label>
-        <input type="text" id="state" name="user_state" placeholder="Choose State">
-        <!-- end -->
+        <select id="state" name="user_state">
+          <option value="choose_state">Choose State</option>
+          <option value="alabama">Alabama</option>
+          <option value="alaska">Alaska</option>
+          <option value="arizona">Arizona</option>
+          <option value="arkansas">Arkansas</option>
+          <option value="california">California</option>
+          <option value="colorado">Colorado</option>
+          <option value="connecticut">Connecticut</option>
+          <option value="delaware">Delaware</option>
+          <option value="florida">Florida</option>
+          <option value="georgia">Georgia</option>
+          <option value="hawaii">Hawaii</option>
+          <option value="idaho">Idaho</option>
+          <option value="illinois">Illinois</option>
+          <option value="indiana">Indiana</option>
+          <option value="iowa">Iowa</option>
+          <option value="kansas">Kansas</option>
+          <option value="kentucky">Kentucky</option>
+          <option value="louisiana">Louisiana</option>
+          <option value="maine">Maine</option>
+          <option value="maryland">Maryland</option>
+          <option value="massachusetts">Massachusetts</option>
+          <option value="michigan">Michigan</option>
+          <option value="minnesota">Minnesota</option>
+          <option value="mississippi">Mississippi</option>
+          <option value="missouri">Missouri</option>
+          <option value="montana">Montana</option>
+          <option value="nebraska">Nebraska</option>
+          <option value="nevada">Nevada</option>
+          <option value="new_hampshire">New Hampshire</option>
+          <option value="new_jersey">New Jersey</option>
+          <option value="new_mexico">New Mexico</option>
+          <option value="new_york">New York</option>
+          <option value="north_carolina">North Carolina</option>
+          <option value="north_dakota">North Dakota</option>
+          <option value="ohio">Ohio</option>
+          <option value="oklahoma">Oklahoma</option>
+          <option value="oregon">Oregon</option>
+          <option value="pennsylvania">Pennsylvania</option>
+          <option value="rhode_island">Rhode Island</option>
+          <option value="south_carolina">South Carolina</option>
+          <option value="south_dakota">South Dakota</option>
+          <option value="tennessee">Tennessee</option>
+          <option value="texas">Texas</option>
+          <option value="utah">Utah</option>
+          <option value="vermont">Vermont</option>
+          <option value="virginia">Virginia</option>
+          <option value="washington">Washington</option>
+          <option value="west_virginia">West Virginia</option>
+          <option value="wisconsin">Wisconsin</option>
+          <option value="wyoming">Wyoming</option>
+        </select>
 
         <label for="zip">Zip Code</label>
         <input type="text" id="zip" name="user_zip">
@@ -49,7 +99,7 @@
       <fieldset class="newsletter">
         <legend>Newsletter</legend>
 
-        <label>Select the newsletters you would like to receive</label>
+        <p>Select the newsletters you would like to receive</p>
         <br>
         <input type="checkbox" id="html_news" name="news_type" value="newsletter_html">
         <label for="html_news">HTML News</label>
@@ -62,7 +112,7 @@
 
         <br>
 
-        <label>Newsletter Format</label>
+        <label class="spacer">Newsletter Format</label>
         <br>
         <input type="radio" id="html" value="html" name="format">
         <label for="html">HTML</label>
@@ -72,9 +122,9 @@
 
         <br>
 
-        <label for="ideas">Other topics you'd like to hear about</label>
+        <label for="ideas" class="spacer">Other topics you'd like to hear about</label>
         <br>
-        <textarea id="ideas" placeholder="Example: PHP, Python, Java...  "></textarea>
+        <textarea id="ideas" name="user_ideas" placeholder="Example: PHP, Python, Java..."></textarea>
       </fieldset>
 
       <button type="submit">Sign Up</button>
@@ -83,7 +133,7 @@
 
 
   </body>
-  <footer class="col">
+  <footer>
     <p>Copyright The Code Review</p>
   </footer>
 </html>

@@ -2,6 +2,26 @@
     box-sizing: border-box;
   }
 
+  h1,
+  h2,
+  p,
+  legend,
+  label,
+  input,
+  select,
+  textarea,
+  button{
+      font-family: 'Merriweather',
+      Arial, Helvetica, sans-serif;
+  }
+
+p,
+label,
+footer{
+  font-weight: lighter;
+  color: #2d3945;
+}
+
 header,
 form,
 footer {
@@ -10,7 +30,7 @@ footer {
 }
 
 header {
-  background: #2d3945 ;
+  background: #2d3945;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -19,6 +39,9 @@ header {
 
 header h1 {
   margin: 25px 15px;
+  font-size: 21px;
+  letter-spacing: 0px;
+  font-weight: normal;
 }
 
 fieldset {
@@ -29,35 +52,114 @@ fieldset {
 
 legend {
   font-weight: bold;
-  margin-bottom: 25px;
-  font-size: 21px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-label {
-  font-size: 18px;
+footer p{
+  text-align: center;
+  font-style: italic;
+  margin:auto;
+  font-size: 12px;
+  color: white;
+}
+
+footer {
+  background: #2d3945;
+  height: 68px;
 }
 
 input[type="text"],
+select[id="state"],
 input[type="email"],
-input[type="tel"]
- {
-  background: #eff0f1;
-  border: none;
-  border-radius: 5px;
-  height: 50px;
-  width: 100%;
+input[type="tel"] {
+  height: 45px;
   margin-top: 10px;
   margin-bottom: 15px;
-  padding-right: 20px;
+  margin-left: 2px;
+  padding-left: 5px;
+}
+
+input[type="text"],
+select[id="state"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  background: #eff0f1;
+}
+
+input[type="text"],
+select[id="state"],
+input[type="email"],
+input[type="tel"],
+textarea, button {
+  border-radius: 5px;
+  border: none;
+}
+
+textarea[id="ideas"] {
+  margin: 13px 0 28px 0;
+  height: 90px;
+  padding: 5px 0 0 5px;
+}
+
+label[for="ideas"],
+textarea[id="ideas"] {
+  font-size: 14px;
 }
 
 input[placeholder] {
   text-align: right;
+  font-style: italic;
+  padding-right: 20px;
 }
 
 input[id="zip"] {
   width: 50%;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+input[id="html_news"] {
+  margin-top: 0;
+}
+
+input[id="javascript_news"] {
+  margin-bottom: 30px;
+}
+
+label[for="html_news"],
+label[for="css_news"],
+label[for="javascript_news"],
+label[for="html"],
+label[for="plain_text"]  {
+  margin-left: 9px;
+}
+
+input[id="plain_text"] {
   margin-bottom: 25px;
+}
+
+button[type="submit"]{
+  height: 50px;
+  background: #4ebbb5;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border: 4px #46698b solid;
+  outline: none;
 }
 
 .contact input,
@@ -77,14 +179,26 @@ form::before {
 }
 
 .descriptor h2 {
-  margin-bottom: 10px
+  margin: 27px 0 10px 0;
+  font-size: 19px;
+  font-weight: bolder;
 }
 
 .descriptor p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 22px;
   margin-top: 0;
   margin-bottom: 30px
+}
+
+.newsletter p {
+ font-size: 14px;
+ margin: 0 0 0 3px;
+ line-height: 20px;
+}
+
+.spacer {
+  margin-left: 3px;
 }
 
 .col {
@@ -97,9 +211,12 @@ form::before {
   margin-bottom: 3px;
 }
 
-
-
-
+.contact::after {
+  content: "";
+  border-bottom: 2px black solid;
+  display: block;
+  margin-bottom: 25px;
+}
 
 
 
