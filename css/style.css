@@ -19,7 +19,6 @@ p,
 label,
 footer{
   font-weight: lighter;
-  color: #2d3945;
 }
 
 header,
@@ -231,25 +230,31 @@ input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
     font-size: 14px;
   }
 
-  input[id="zip"] {
-    width: 25%;
-  }
-
   .descriptor,form{
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
   }
 
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .contact label {
+    width: 28%;
+    margin-top: 23px;
+  }
+
+  .contact input{
+    width: 72%;
+  }
+
+  .contact select {
+    width: 72%;
+  }
+
+  input[id="zip"] {
+    width: 25%;
+  }
 }
-
-
-
-
-
-
-
-
-
-/* TODO:  */
