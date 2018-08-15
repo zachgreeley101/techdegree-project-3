@@ -17,16 +17,16 @@
       <p>Get the latest news on how your code is doing right in your inbox</p>
     </div>
 
-    <form action="index.html" method="post" class="col">
+    <form action="index.html" method="post">
 
       <fieldset class="contact">
         <legend>Contact Information</legend>
 
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" placeholder="Required">
+        <input required type="text" id="name" name="user_name" placeholder="Required">
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="user_email" placeholder="Required">
+        <input required type="email" id="email" name="user_email" placeholder="Required">
 
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="user_phone">
@@ -109,9 +109,7 @@
         <br>
         <input type="checkbox" id="javascript_news" name="news_type" value="newsletter_javascript">
         <label for="javascript_news">Javascript News</label>
-
         <br>
-
         <label class="spacer">Newsletter Format</label>
         <br>
         <input type="radio" id="html" value="html" name="format">
@@ -119,22 +117,18 @@
         <br>
         <input type="radio" id="plain_text" value="plain_text" name="format">
         <label for="plain_text">Plain text</label>
-
         <br>
-
         <label for="ideas" class="spacer">Other topics you'd like to hear about</label>
         <br>
         <textarea id="ideas" name="user_ideas" placeholder="Example: PHP, Python, Java..."></textarea>
       </fieldset>
 
       <button type="submit">Sign Up</button>
-
     </form>
-
 
   </body>
   <footer>
-    <p>Copyright The Code Review</p>
+    <p>Copyright 2018: The Code Review</p>
   </footer>
 </html>
 
